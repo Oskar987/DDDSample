@@ -1,8 +1,9 @@
-﻿using MediatR;
-
-namespace DDDSample.Application.Customers.Create
+﻿namespace DDDSample.Application.Customers.Create
 {
-	public record CreateCustomerCommand(
+    using ErrorOr;
+    using MediatR;
+
+    public record CreateCustomerCommand(
 		string Name,
 		string LastName,
 		string Email,
@@ -12,6 +13,6 @@ namespace DDDSample.Application.Customers.Create
 		string Line2,
 		string City,
 		string State,
-		string ZipCode) : IRequest<Unit>;
+		string ZipCode) : IRequest<ErrorOr<Unit>>;
 }
 
