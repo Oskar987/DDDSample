@@ -30,11 +30,13 @@
     <None Remove="Common\" />
     <None Remove="Common\Errors\" />
     <None Remove="Common\Http\" />
+    <None Remove="Middlewares\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Extensions\" />
     <Folder Include="Common\" />
     <Folder Include="Common\Errors\" />
     <Folder Include="Common\Http\" />
+    <Folder Include="Middlewares\" />
   </ItemGroup>
 </Project>

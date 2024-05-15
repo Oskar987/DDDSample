@@ -11,7 +11,7 @@
     {
         private readonly ApiBehaviorOptions _options;
 
-        public DDDSampleProblemDetailsFactory(ApiBehavioCommonrOptions options)
+        public DDDSampleProblemDetailsFactory(ApiBehaviorOptions options)
         {
             _options = options ?? throw new ArgumentNullException(nameof(options));
         }

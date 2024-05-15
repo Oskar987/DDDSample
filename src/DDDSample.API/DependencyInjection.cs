@@ -1,5 +1,6 @@
 ﻿namespace DDDSample.API
 {
+    using DDDSample.API.Middlewares;
     using Microsoft.Extensions.DependencyInjection;
 
     public static class DependencyInjection
@@ -9,7 +10,7 @@
             services.AddControllers();
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
-
+            services.AddTransient<GloblalExceptionHandlingMiddleware>();
             return services;
 		}
 	}

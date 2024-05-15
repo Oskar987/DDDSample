@@ -13,9 +13,12 @@
             _applicationDbContext = applicationDbContext ?? throw new ArgumentNullException(nameof(applicationDbContext));
         }
 
-        public async Task Add(Customer customer) => await _applicationDbContext.Customers.AddAsync(customer);
-
+        public void Add(Customer customer) => _applicationDbContext.Customers.Add(customer);
+        public void Delete(Customer customer) => _applicationDbContext.Customers.Remove(customer);
+        public void Update(Customer customer) => _applicationDbContext.Customers.Update(customer);
+        public async Task<bool> ExistsAsync(CustomerId id) => await _applicationDbContext.Customers.AnyAsync(customer => customer.Id == id);
         public async Task<Customer?> GetByIdAsync(CustomerId id) => await _applicationDbContext.Customers.SingleOrDefaultAsync(c => c.Id == id);
+        public async Task<List<Customer>> GetAll() => await _applicationDbContext.Customers.ToListAsync();
     }
 }
 

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDSample.Application", "sr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDSample.API", "src\DDDSample.API\DDDSample.API.csproj", "{ABE5B842-AFEA-48EB-A93C-8A4ACDB3233F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Customers.UnitTests", "tests\UnitTests\Application.Customers.UnitTests\Application.Customers.UnitTests.csproj", "{C003D754-F596-43A9-93F1-B124382D0EF9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{ABE5B842-AFEA-48EB-A93C-8A4ACDB3233F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABE5B842-AFEA-48EB-A93C-8A4ACDB3233F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABE5B842-AFEA-48EB-A93C-8A4ACDB3233F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C003D754-F596-43A9-93F1-B124382D0EF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C003D754-F596-43A9-93F1-B124382D0EF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C003D754-F596-43A9-93F1-B124382D0EF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C003D754-F596-43A9-93F1-B124382D0EF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

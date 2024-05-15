@@ -19,10 +19,24 @@
     <None Remove="Data\" />
     <None Remove="Customers\" />
     <None Remove="Customers\Create\" />
+    <None Remove="Common\" />
+    <None Remove="Common\Behaviors\" />
+    <None Remove="Customers\Update\" />
+    <None Remove="Customers\GetById\" />
+    <None Remove="Customers\Delete\" />
+    <None Remove="Customers\GetAll\" />
+    <None Remove="Customers\Common\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
     <Folder Include="Customers\" />
     <Folder Include="Customers\Create\" />
+    <Folder Include="Common\" />
+    <Folder Include="Common\Behaviors\" />
+    <Folder Include="Customers\Update\" />
+    <Folder Include="Customers\GetById\" />
+    <Folder Include="Customers\Delete\" />
+    <Folder Include="Customers\GetAll\" />
+    <Folder Include="Customers\Common\" />
   </ItemGroup>
 </Project>
