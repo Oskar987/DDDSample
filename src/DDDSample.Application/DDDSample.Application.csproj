@@ -26,6 +26,11 @@
     <None Remove="Customers\Delete\" />
     <None Remove="Customers\GetAll\" />
     <None Remove="Customers\Common\" />
+    <None Remove="Users\" />
+    <None Remove="Users\Get\" />
+    <None Remove="Users\GetAll\" />
+    <None Remove="Users\Common\" />
+    <None Remove="Users\Login\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
@@ -38,5 +43,10 @@
     <Folder Include="Customers\Delete\" />
     <Folder Include="Customers\GetAll\" />
     <Folder Include="Customers\Common\" />
+    <Folder Include="Users\" />
+    <Folder Include="Users\Get\" />
+    <Folder Include="Users\GetAll\" />
+    <Folder Include="Users\Common\" />
+    <Folder Include="Users\Login\" />
   </ItemGroup>
 </Project>

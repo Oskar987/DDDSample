@@ -5,11 +5,13 @@ using DDDSample.Application.Customers.GetById;
 using DDDSample.Application.Customers.Update;
 using ErrorOr;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DDDSample.API.Controllers;
 
 [Route("customers")]
+[Authorize]
 public class Customers : ApiController
 {
     private readonly ISender _mediator;
