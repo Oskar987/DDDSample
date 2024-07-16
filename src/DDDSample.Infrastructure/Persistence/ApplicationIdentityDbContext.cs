@@ -24,12 +24,12 @@ namespace DDDSample.Infrastructure.Persistence
 
         }
 
-        /*protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //https://stackoverflow.com/questions/70273434/unable-to-resolve-service-for-type-¨microsoft-entityframeworkcore-dbcontextopti
             optionsBuilder.UseNpgsql("Host=127.0.0.1;Port=5432;Database=postgres;User Id=araks;Password=123456;");
             base.OnConfiguring(optionsBuilder);
-        }*/
+        }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
