@@ -33,7 +33,7 @@ namespace DDDSample.Infrastructure.Persistence.Seeds.Identity
 
                 foreach (var user in users)
                 {
-                    await userManager.CreateAsync(user, "qazwsX123!");
+                        await userManager.CreateAsync(user, "qazwsX123!");
                 }
             }
         }
